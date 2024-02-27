@@ -1,0 +1,108 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+{% block content %}
+  <div class="row">
+    <h4 class="teal-text center-align">Click to view project details</h4>
+    <div class="col s12">
+      <ul class="collapsible popout">
+        <li>
+          <div class="collapsible-header purple lighten-5">
+            <h5 class="blue-grey-text lighten-4">CityBeat : Job application portal</h5>
+          </div>
+          <div class="collapsible-body white">
+            <span class="blue-grey-text lighten-1">Developed a job portal website using Django, MySQL, and Bootstrap, connecting students with employment opportunities. Implemented a user-friendly interface and database management for seamless job searching and application processes</span>
+
+            <div class="row s12 center-align" id="link">
+              <div class="col s12 m6" style="margin-top: 30px;">
+                <a class="btn-floating btn-large waves-effect waves-light blue" href="https://github.com/daiyan52/CityBeat-" target="_blank"><i class="fab fa-github"></i></a>
+                <p class="blue-text lighten-4">Github Repository</p>
+              </div>
+
+              <div class="col s12 m6" style="margin-top: 30px;">
+                <a class="btn-floating btn-large waves-effect waves-light blue" href="{% url 'testapp:citybeat' %}" target="_blank"><i class="fa-solid fa-video"></i></a>
+                <p class="blue-text lighten-4">How it works</p>
+              </div>
+
+              <div class="col s12 m6" style="margin-top: 30px;">
+                <a class="btn-floating btn-large waves-effect waves-light blue" href="http://daiyan52.pythonanywhere.com" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <p class="blue-text lighten-4">Demo</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="collapsible-header purple lighten-5">
+            <h5 class="blue-grey-text lighten-4">TechTestArana : Quiz App</h5>
+          </div>
+          <div class="collapsible-body white">
+            <span class="blue-grey-text lighten-1">
+              TechTestArana is a quiz website developed using Django. 
+              It offers quizzes on various topics like Java, Python, and 
+              Aptitude, providing a fun and interactive way to test and improve 
+              your knowledge.
+            </span>
+
+            <div class="row s12 center-align" id="link">
+              <div class="col s12 m6" style="margin-top: 30px;">
+                <a class="btn-floating btn-large waves-effect waves-light blue" href="https://github.com/daiyan52/TechTestArena" target="_blank"><i class="fab fa-github"></i></a>
+                <p class="blue-text lighten-4">Github Repository</p>
+              </div>
+
+              <div class="col s12 m6" style="margin-top: 30px;">
+                <a class="btn-floating btn-large waves-effect waves-light blue" href="{% url 'testapp:quizApp' %}" target="_blank"><i class="fa-solid fa-video"></i></a>
+                <p class="blue-text lighten-4">How it works</p>
+              </div>
+
+              <div class="col s12 m6" style="margin-top: 30px;">
+                <a class="btn-floating btn-large waves-effect waves-light blue" href="http://daiyan5252.pythonanywhere.com" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <p class="blue-text lighten-4">Demo</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="collapsible-header purple lighten-5">
+            <h5 class="blue-grey-text lighten-4">FootFusion : Footwear e-commerce website</h5>
+          </div>
+          <div class="collapsible-body white">
+            <span class="blue-grey-text lighten-1">Developed a job portal website using Django, MySQL, and Bootstrap, connecting students with employment opportunities. Implemented a user-friendly interface and database management for seamless job searching and application processes</span>
+
+            <div class="row s12 center-align" id="link">
+              <div class="col s12 m6" style="margin-top: 30px;">
+                <a class="btn-floating btn-large waves-effect waves-light blue" href="https://github.com/daiyan52/FootFusion-E-commerce-Site" target="_blank"><i class="fab fa-github"></i></a>
+                <p class="blue-text lighten-4">Github Repository</p>
+              </div>
+
+              <div class="col s12 m6" style="margin-top: 30px;">
+                <a class="btn-floating btn-large waves-effect waves-light blue" href="{% url 'testapp:footfusion' %}" target="_blank"><i class="fa-solid fa-video"></i></a>
+                <p class="blue-text lighten-4">How it works</p>
+              </div>
+
+              <div class="col s12 m6" style="margin-top: 30px;">
+                <a class="btn-floating btn-large waves-effect waves-light blue" href="http://daiyan52.pythonanywhere.com" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <p class="blue-text lighten-4">Demo</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}
+{% block script %}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.collapsible')
+      var instances = M.Collapsible.init(elems)
+    })
+  </script>
+
+  <style>
+    #link {
+      display: flex;
+      justify-content: end;
+    }
+  </style>
+{% endblock %}

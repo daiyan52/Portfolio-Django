@@ -1,0 +1,37 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% block content %}
+<div class="row" style="margin-top: 80px;">
+    <div class="col s12">
+        <div class="center-align">
+            <video class="responsive-video" controls width="900" height="500" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+                <source src="{% static 'images/footfusion.mov' %}" type="video/mp4">
+            </video>            
+        </div>
+    </div>
+</div>
+<style>
+    .responsive-video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .pulse {
+        animation-name: pulse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+</style>
+{% endblock %}

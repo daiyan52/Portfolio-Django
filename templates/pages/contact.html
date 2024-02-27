@@ -1,0 +1,65 @@
+{% extends 'pages/base.html' %}
+
+{% block content %}
+  <div class="row">
+    <div class="col s12">
+      <div class="col s12 m7  purple lighten-5" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); height: 280px; margin-top: 10px;">
+        <form method="post" action="https://formspree.io/f/xbjverlv">
+          <div class="input-field">
+            <input id="name" name="name" type="text" class="validate" placeholder="Name" />
+          </div>
+
+          <div class="input-field">
+            <input id="email" name="email" type="email" class="validate" placeholder="Email" />
+          </div>
+
+          <div class="input-field">
+            <textarea id="message" name="message" class="materialize-textarea" placeholder="Message"></textarea>
+          </div>
+
+          <button class="btn waves-effect blue waves-light" type="submit"><i class="material-icons right">send</i>Submit</button>
+        </form>
+      </div>
+      <div class="col s12 m4 offset-l1 white" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); height: 280px; margin-top: 10px;">
+        <h5>Address</h5>
+        <hr>
+        <p><i class="fa-solid fa-location-dot"></i>&nbsp;Agarpara, Kolkata, 700109</p>
+        <p><i class="fa-solid fa-phone"></i>&nbsp;+91 8102472607</p>
+        <p><i class="fa-solid fa-envelope"></i>&nbsp;rehanalamkkr@gmail.com</p>
+        <p class="green-text"><strong>Follow me!</strong></p>
+        <ul class="social">
+            <li>
+                <a class="black-text" href="https://www.linkedin.com/in/daiyan-alam-27a076224/">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a class="black-text" href="https://github.com/daiyan52">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a class="black-text" href="https://www.hackerrank.com/profile/rehanalamkkr">
+                  <i class="fa-brands fa-hackerrank"></i>
+                </a>
+            </li>
+            <li>
+                <a class="black-text" href="https://www.instagram.com/a_mighty_ruler_/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<style>
+    .social li{
+        display: inline-block;
+        padding:5px;
+    }
+    .social li:hover{
+      opacity: 0.2;
+    }
+</style>
+{% endblock %}
